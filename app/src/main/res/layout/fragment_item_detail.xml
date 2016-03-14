@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="300dp"
+    android:layout_height="match_parent"
+    tools:context="com.example.castoryan.eatwhat_beta3.ItemDetail"
+    android:id="@+id/dd"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="350dp"
+        android:layout_height="140dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:adjustViewBounds="false"
+        android:visibility="visible"
+        android:src="@drawable/images"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+>
+        </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_dis"
+        android:text="                                                  "
+        android:layout_alignBottom="@+id/view_name"
+        android:layout_alignLeft="@+id/addr_dis"
+        android:layout_alignStart="@+id/addr_dis" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/num_dis"
+        android:layout_above="@+id/gps_dis"
+        android:layout_toRightOf="@+id/view_num"
+        android:layout_toEndOf="@+id/view_num"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:text="                                          " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/addr_dis"
+        android:layout_below="@+id/name_dis"
+        android:layout_alignLeft="@+id/num_dis"
+        android:layout_alignStart="@+id/num_dis"
+        android:layout_marginTop="28dp"
+        android:text="                                            " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gps_dis"
+        android:layout_marginTop="30dp"
+        android:text="                                                           "
+        android:layout_below="@+id/view_num"
+        android:layout_alignLeft="@+id/num_dis"
+        android:layout_alignStart="@+id/num_dis" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/view_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/imgView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:textStyle="bold"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:id="@+id/view_add"
+        android:layout_alignTop="@+id/addr_dis"
+        android:layout_alignLeft="@+id/view_name"
+        android:layout_alignStart="@+id/view_name"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number"
+        android:id="@+id/view_num"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_below="@+id/view_add"
+        android:layout_alignLeft="@+id/view_add"
+        android:layout_alignStart="@+id/view_add"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS"
+        android:id="@+id/view_gps"
+        android:layout_alignTop="@+id/gps_dis"
+        android:layout_alignLeft="@+id/view_num"
+        android:layout_alignStart="@+id/view_num"
+        android:textStyle="bold"
+        android:textSize="17dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Get Map"
+        android:id="@+id/btn_gps"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="200dp"
+        />
+</RelativeLayout>

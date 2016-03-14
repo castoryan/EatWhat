@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/acceleration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FF00"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Just shake and Have a suprise"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp" />
+
+</RelativeLayout>
